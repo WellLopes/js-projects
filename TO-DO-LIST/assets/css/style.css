@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  color: aliceblue;
+}
+
+body {
+  background-color: #2b2d42;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.checkbox-text {
+  margin-left: 5px;
+}
+
+.input input {
+  border: 2px solid rgb(63, 58, 58);
+  border-radius: 5px;
+
+  color: #2b2d42;
+
+  height: 20px;
+}
+
+.input #button {
+  background-color: #fff;
+  color: #4a5091;
+
+  height: 22px;
+  display: inline-block;
+  align-items: center;
+
+  border: none;
+  border-radius: 2px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.input #button:hover {
+  color: #FFF;
+  background-color: #4a5091;
+}
+
+.checkbox-to-do {
+  margin-top: 10px;
+  align-items: left;
+}
+
+.to-do-list:checked + .checkbox-text{
+  text-decoration:line-through;
+  font-style: italic;
+}
